@@ -23,7 +23,15 @@ This is a docker-compose file for Joomla. It uses the official Joomla image and 
 6. Use `http://localhost:8080/administrator` as the admin URL
 
 ## Configuration
-You can change the MySQL root password and the Joomla database name, user, and password by editing the `docker-compose.yml` file.
+You can change the MySQL root password and the Joomla database name, user, and password by editing the `compose.yml` file.
+
+## Notes
+
+- The MySQL data is persisted in the `joomladb` volume docker.
+- The Joomla data is persisted in the `./joomla` directory. (You must create it before running `docker-compose up -d`)
+
+## Contributing
+Contributions are welcome. Just open an issue or a pull request.
 
 ## Author
 
